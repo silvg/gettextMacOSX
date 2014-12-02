@@ -22,6 +22,7 @@ find / -name php
 3. ./configure --with-gettext
 4. make
 5. make test (this tells you a lot of useful information)
+6. Jump to section D if you get to this point.
 
 C. If there are any issues with phpize, download and install Autoconf
 
