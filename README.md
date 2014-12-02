@@ -32,18 +32,11 @@ C. If there are any issues with phpize, download and install Autoconf
 5. make
 6. sudo make install
 7. Note: if you go to /usr/bin and you see another bin, move all the autoconf files from /usr/bin/bin to /usr/bin
-   sudo mv /usr/bin/bin/autoconf /usr/bin
-   sudo mv /usr/bin/bin/autoheader /usr/bin
-   sudo mv /usr/bin/bin/autom4te /usr/bin
-   sudo mv /usr/bin/bin/autoreconf /usr/bin
-   sudo mv /usr/bin/bin/autoscan /usr/bin
-   sudo mv /usr/bin/bin/autoupdate /usr/bin
-   sudo mv /usr/bin/bin/ifnames /usr/bin
 8. Remove the empty bin directory
-   rmdir bin
+   <br>rmdir bin
 9. Make changes in two files:
-   /usr/bin/autoconf: line 505: change /usr/bin/bin/autom4te to /usr/bin/autom4te
-   /usr/bin/autoheader: find /usr/bin/bin/autom4te and change to /usr/bin/autom4te
+   <br>/usr/bin/autoconf: line 505: change /usr/bin/bin/autom4te to /usr/bin/autom4te
+   <br>/usr/bin/autoheader: find /usr/bin/bin/autom4te and change to /usr/bin/autom4te
 10. Go back to section B and phpize again...
 
 D. Copy .so file to YOUR php installation (you may have a different no-debug file)
@@ -58,4 +51,9 @@ E. Update Mavericks/Yosemite's php.ini file to enable gettext
 F. Restart Apache
 
 1. sudo apachectl restart
+
+
+FINALLY, run a check to make sure that gettext will really work. Check out my test.php :)
+
+THANK YOU FOR YOUR PATRONAGE AND HAPPY CODING! 
 
